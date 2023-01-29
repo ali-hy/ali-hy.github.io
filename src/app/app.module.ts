@@ -12,7 +12,6 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { ProjectPageComponent } from './pages/project-page/project-page.component';
 import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -29,7 +28,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
-    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
