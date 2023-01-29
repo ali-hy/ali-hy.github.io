@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ali-haitham-portfolio": {
+      "hosting": {
+        "ngPortfolio": [
+          "ali-haitham-portfolio"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ali-haitham-portfolio"
+  }
+}
