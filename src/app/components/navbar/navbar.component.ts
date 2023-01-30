@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
-  isMenuCollapsed:boolean = true;
+  menuIsCollapsed:boolean = false;
+
+  onMenuClick = () => {
+    this.menuIsCollapsed = !this.menuIsCollapsed;
+  }
 }
