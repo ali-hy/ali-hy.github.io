@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row center">
+    <div *ngFor="let project of ($projects | async)" class="col-lg col-md-6">
+      <a [routerLink]="'/project/'+project.id"><img src="{{project.imageUrls[0]}}" alt=""></a>
+      <h4 class="caption text-center">{{project.title}}</h4>
+      <div class="link-icons d-flex justify-content-center">
+        <a href="{{getGithubRepoUrl(project)}}" target="_blank">
+          <img-icon iconName="github"></img-icon>
+        </a>
+        <a href="{{project.websiteUrl}}" target="_blank">
+          <img-icon iconName="link"></img-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
