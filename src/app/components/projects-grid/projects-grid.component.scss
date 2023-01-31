@@ -1,0 +1,14 @@
+.link-icons{
+  gap: 20px;
+}
+.caption{
+  font-weight: normal;
+  font-family: 'Courier New', Courier, monospace;
+}
+img{
+  display: block;
+  height: 240px;
+  border-radius: 10px;
+  box-shadow:  0 0 10px 0 var(--shadow-tone-0);
+  margin: auto;
+}

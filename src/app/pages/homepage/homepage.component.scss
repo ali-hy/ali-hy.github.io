@@ -1,0 +1,42 @@
+@use '../../../layout.scss' as *;
+
+.about-me-col{
+  padding: 0 20px !important;
+  border: solid 1px var(--text-color-muted);
+}
+
+.project-list-col{
+  background-color: var(--background-base);
+  border-radius: 5px;
+  box-shadow: 1px 3px 3px 0 var(--shadow-tone-0);
+}
+.project-list{
+  list-style: none;
+  padding: 0;
+}
+
+p, .project-list{
+  font-family: Inconsolata ,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--text-color-muted);
+}
+.project-list li{
+  font-size: 1.2em;
+  padding: 0.2em 0;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+}
+a::after{
+  content: "";
+  display: block;
+  background-color: var(--text-color-muted);
+  height: 1px;
+  transform: scale(0);
+  transform-origin: 0;
+  transition-duration: 0.4s;
+}
+a:hover::after{
+  transform: scale(1);
+}

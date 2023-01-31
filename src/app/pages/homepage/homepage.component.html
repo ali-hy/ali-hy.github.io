@@ -1,1 +1,27 @@
-<p>homepage works!</p>
+<app-intro-section
+  title="Ali Haitham"
+  subtitle="I'm a front-end developer and a 
+    computer science student"
+></app-intro-section>
+<div class="container">
+  <div class="row">
+    <div class="about-me-col col-md text-center text-md-justify">
+      <h3>About me</h3>
+      <p>
+        I'm a computer science student in Ain Shams University in Egypt.
+        As of 2021 I started delving into the world of front-end
+        development, and was captivated. Right now, most of my experience
+        is with React, and vanilla html, css, and js. Though I plan on getting
+        experienced with Angular as well.
+      </p>
+    </div>
+    <div class="project-list-col offset-md-2 col-md text-center mt-3 mt-md-0">
+      <h3>Projects</h3>
+      <ol class="project-list">
+        <li *ngFor="let project of ($projects | async);">
+          <a [routerLink]="getProjectRouterLink(project)">{{project.title}}</a>
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>

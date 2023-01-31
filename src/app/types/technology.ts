@@ -19,7 +19,7 @@ export const BackendTech = [
 export const OtherTech = [
   "Firebase",
   "AWS"
-];
+] as const;
 
 const Technologies = [...FrontendTech, ...BackendTech, ...OtherTech] as const;
 
