@@ -7,9 +7,6 @@ import { ProjectsPageComponent } from './pages/projects-page/projects-page.compo
 
 const routes: Routes = [
   {
-    path: "home", 
-    component: HomepageComponent
-  },{
     path: "project/:id",
     component: ProjectPageComponent,
   },{
@@ -17,11 +14,11 @@ const routes: Routes = [
     component: ProjectsPageComponent
   },{
     path: "",
-    redirectTo: "home",
+    component: HomepageComponent,
     pathMatch: "full"
   },{
     path:"**",
-    component: PageNotFoundComponent
+    component: PageNotFoundComponent,
   }
 ];
 
