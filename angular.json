@@ -33,8 +33,7 @@
               "src/layout.scss"
             ],
             "scripts": [
-            ],
-            "baseHref": "/portfolio/"
+            ]
           },
           "configurations": {
             "production": {
